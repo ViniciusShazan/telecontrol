@@ -11,6 +11,7 @@ Tabela de Erros:
 
 
 Configurando banco de dados:
+   
     CREATE DATABASE sistema_ordem_servico;
 
     USE sistema_ordem_servico;
