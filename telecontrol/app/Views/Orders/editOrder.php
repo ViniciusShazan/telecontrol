@@ -42,6 +42,7 @@
     </div>
 
     <form action="edit-order" method="POST">
+        <h1>Editar Ordem Nº<?= $_GET['id']; ?></h1>
         <div class="form-group">
             <label for="numero_ordem">Numero da ordem</label>
             <input type="number" class="form-control" name="numero_ordem" id="numero_ordem" value="<?= $ordem['ordens']['numero_ordem'] ?>" required readonly>

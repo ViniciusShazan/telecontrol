@@ -38,7 +38,7 @@
         <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>">
         <input type="hidden" name="_method" value="DELETE">
         <button type="submit" name="remove_product" class="btn btn-success">Sim</button>
-        <button class="btn btn-cancel"><a href="../products">Não</a></button>
+        <button type="button" class="btn btn-cancel"><a href="../products">Não</a></button>
     </form>
 </body>
 </html>

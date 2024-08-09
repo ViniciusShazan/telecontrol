@@ -9,7 +9,7 @@
         $cliente = $clients->show($_GET['id']);
         
         if ($cliente["status"] == false) {
-            header('Location: home');
+            header('Location: ./home');
         }
     } catch (\Throwable $th) {
         error_log($th);
@@ -34,7 +34,7 @@
         <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>">
         <input type="hidden" name="_method" value="DELETE">
         <button type="submit" name="tele_remove" class="btn btn-success">Sim</button>
-        <button class="btn btn-cancel"><a href="../clients">Não</a></button>
+        <button type="button" class="btn btn-cancel"><a href="../clients">Não</a></button>
     </form>
 </body>
 </html>
