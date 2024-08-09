@@ -1,4 +1,7 @@
-Tabela de Erros
+PHP 8>
+DB Mysql
+
+Tabela de Erros:
 
 0x001 = Erro ao conectar com o banco de dados;
 0x003 = Erro de CSRF token;
