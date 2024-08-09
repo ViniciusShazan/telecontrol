@@ -1,0 +1,50 @@
+/* toast.css */
+
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 300px;
+    z-index: 1000;
+}
+
+.toast-success {
+    background-color: green;
+}
+
+.toast-warning {
+    background-color: orange;
+}
+
+.toast-danger {
+    background-color: red;
+}
+
+.toast-nullable {
+    background-color: blue;
+}
+
+.toast h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.toast button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.toast button:hover {
+    color: #ccc;
+}
