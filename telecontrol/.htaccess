@@ -1,0 +1,27 @@
+RewriteEngine on
+
+RewriteRule home index.php
+
+RewriteRule clients app/Views/Clients/listClients.php
+RewriteRule createClient app/Views/Clients/createClient.php
+RewriteRule ^update-cliente/([0-9]+)$ app/Views/Clients/editClient.php?id=$1
+RewriteRule ^remove-cliente/([0-9]+)$ app/Views/Clients/removeClient.php?id=$1
+
+RewriteRule products app/Views/Products/listProducts.php
+RewriteRule createProduct app/Views/Products/createProduct.php
+RewriteRule ^update-produto/([0-9]+)$ app/Views/Products/editProduct.php?id=$1
+RewriteRule ^remove-produto/([0-9]+)$ app/Views/Products/removeProduct.php?id=$1
+
+RewriteRule orders app/Views/Orders/listOrders.php
+RewriteRule createOrder app/Views/Orders/createOrder.php
+RewriteRule ^update-orden/([0-9]+)$ app/Views/Orders/editOrder.php?id=$1
+RewriteRule ^remove-orden/([0-9]+)$ app/Views/Orders/removeOrder.php?id=$1
+
+RewriteRule created/client app/Controllers/Controller.php
+RewriteRule edit/client app/Controllers/Controller.php
+RewriteRule delete/client app/Controllers/Controller.php
+RewriteRule edit-telecontrol app/Controllers/Controller.php
+RewriteRule created-product app/Controllers/Controller.php
+RewriteRule created-order app/Controllers/Controller.php
+RewriteRule edit-order app/Controllers/Controller.php
+RewriteRule delete-order app/Controllers/Controller.php
